@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color:lightblue;
+}
+h1{
+    color: black;
+    margin-bottom: 5px;
+}
+
+h2{
+    margin-bottom: 5px;
+}
+.disappear{
+    display: none;
+}
+.container{
+    background-color: lightblue;
+    border: solid;
+    border-width: 5px;
+    border-color:black;
+    height: 500px;
+    width: 500px;
+    margin: auto;
+    margin-top: 150px;
+}
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+.flex-center{
+    justify-content: center;
+    align-items: center;
+}
+.justify-center{
+    justify-content: center;
+}
+.text-center{
+    text-align: center;
+}
+.hidden{
+    display: none;
+}
+.btn{
+    width: 100px;
+    height: 50px;
+    margin: 5px;
+    color: black;
+    background-color: blanchedalmond;
+    border-radius: 5px;
+    border-color: black;
+    border-width: 2px;
+    border-style: dashed;
+    display: inline;
+}
+.quizBody{
+    border: 10px;
+    border-color: brown;
+    border-style: solid;
+    font-weight: bold;
+}
+.timer{
+    margin: 3px;
+    font-size: 18px;
+    font-display: center;
+    border: 2px;
+    border-color: green;
+    border-style: solid;
+    font-display: center;
+}
+.pickBox{
+    border: 2px;
+    border-style: solid;
+    margin: 10px;
+    font-size:medium;
+    border-radius: 3px;
+}
+.pick .data{
+    margin-left: 10px;
+    padding-left: 10px;
+    font-weight: bold;
+}
