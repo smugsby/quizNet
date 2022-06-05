@@ -1,7 +1,6 @@
 const question = document.querySelector('#question');//question
-const data = Array.from(document.querySelector('.data'));//choice-text
-const pick = document.querySelector('.pick');//choice-prefix
-
+const data = Array.from(document.querySelector('.data'));
+const pick = document.querySelector('.pick');
 let score = 0
 let questionCounter = 0
 let currentQuestion=""
@@ -33,11 +32,11 @@ let questions = [
 // establishing number of questions for the game
 const maxQuestions=3;
 const countQuestion=0;
-
-//adding display function
-var quizBody= getElementById("quizBody");
-function addQuiz(){
-    quizBody.classList.remove("disappear")
+//Making questions appear
+function reappear(){
+    var questionEl= 
+    document.getElementById("disappear");
+    questionEl.classList.remove("disappear");
 }
 //Adding timer function
 function timer(){
@@ -46,6 +45,7 @@ function timer(){
         document.getElementById("seconds").innerHTML="00"+ sec;
         sec++;
     },1000);
+    reappear();
 }
 //logic for next question
 if (maxQuestions>countQuestion) {
@@ -55,8 +55,6 @@ if (maxQuestions>countQuestion) {
 function startGame(){
     score=0;
     nextQuestion=[...questions];
-    addQuiz();
-    timer();
 }
 //get button click to start game
 function buttonClick() {
