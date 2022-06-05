@@ -13,7 +13,7 @@
     <!--"heading"-->
 <div id="home" class="flex-column flex-center">
         <h1>Let's get started!</h1>
-        <button class="btn" id="start">Start</button>
+        <button class="btn" id="start" onclick="timer()">Start</button>
         <button class="btn" id="highScore">High Scores</button>
 </div>
     <!--quiz app part-->
@@ -22,25 +22,27 @@
     <div class="timer">
     <div>Your Time Is</div><p id="seconds">""</p>
     </div>
-    <!--
-    <div id="question">What is the answer to this question?</div>
+<!-- question div-->
+<div id="disappear" class="disappear">
+    <div id="question">What does CSS stand for?</div>
     <div class="pickBox">
-        <div class="pick">This is a choice</div>
-        <div class="data" data-number="1">Choddd</div>
+        <div class="pick">A</div>
+        <div class="data" data-number="1">Cascading Style Sheets</div>
     </div>
     <div class="pickBox">
-        <div class="pick">This is a choice 2</div>
-        <div class="data" data-number="2">222ffes</div>
+        <div class="pick">B</div>
+        <div class="data" data-number="2">Canvas Style Sheets</div>
     </div>
     <div class="pickBox">
-        <div class="pick">This is a choice 3</div>
-        <div class="data" data-number="3">Ceffwwddd</div>
+        <div class="pick">C</div>
+        <div class="data" data-number="3">Java Script</div>
     </div>
     <div class="pickBox">
-        <div class="pick">This is a choice 4</div>
-        <div class="data" data-number="4">Choffff</div>
-    </div> -->
+        <div class="pick">D</div>
+        <div class="data" data-number="4">HTML</div>
+    </div>
     <div id="quizBody"></div>
+</div>
 </div>
 </div>
 <script src="../quizNet/assets/script.js"></script>    
